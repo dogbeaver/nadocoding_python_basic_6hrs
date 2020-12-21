@@ -188,8 +188,62 @@ date = randint(4, 28)
 print("오프라인 스터디 모임 날짜는 매월" + str(date) + " 일로 선정되었습니다.")
 
 # 문자열 (00'46'58)
+sentence = '나는 소년입니다'
+print(sentence)
+sentence2 = "파이썬은 어려워요"
+print(sentence2)
+sentence3 = """
+나는 소년이고,
+파이썬은 어려워요
+"""
+print(sentence3)
 
- 
+# 슬라이싱 (00'48'28)
+ID_number = "990120-1234567"
+
+print("성별 : " + ID_number[7])
+print("연 : " +ID_number[0:2]) # 0 부터 2 직전까지 (0,1)
+print("월 : " + ID_number[2:4])
+print("일 : " + ID_number[4:6])
+
+print("생년월일 : " + ID_number[:6]) # 처음부터 6 직전까지
+print("뒤 7자리 : " + ID_number[7:]) # 7 부터 끝까지
+print("뒤 7자리 (뒤에부터) : " + ID_number[-7:]) # 맨 뒤에서 7번째부터 끝까지
+
+# 문자열 처리함수 (00'55'12)
+python = "Python is Amazing"
+print(python.lower())
+print(python.upper())
+print(python[0].isupper())
+print(len(python))
+print(python.replace("Python", "Java"))
+
+index = python.index("n")
+print(index)
+index = python.index("n", index + 1) #두번째 n 찾기
+print(index)
+
+print(python.find("Java")) # Java라는 단어는 없어서 -1이 나옴
+''' print(python.index("Java")) # index에서는 Java라는 단어가 없으므로 오류를 냄'''
+print("hi")
+
+print(python.count("n")) #이 문장에서 n이 총 몇번 등장하는지 구할때 씀
+
+# 문자열 포맷 (1'00'57)
+''' print("a" + "b")
+print("a", "b") '''
+
+# 방법 1
+print("나는 %d살입니다." % 20)
+print("나는 %s을 좋아해요." % "파이썬")
+print("Apple 은 %c로 시작해요." % "A") # 
+
+
+
+
+
+
+
 
 
 
